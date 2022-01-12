@@ -1,0 +1,156 @@
+
+
+
+#container {
+    width: 960px;
+    margin: 20px auto;
+    /* height: 600px;
+    border: 1px solid #333; */
+}
+
+#header,
+#footer {
+    padding: 20px;
+}
+
+#header {
+    background-color: rgb(198, 184, 204);
+    height: 100px;
+    /* margin-bottom: 10px; */
+    /* border-top: 1px solid #333;
+    border-bottom: 1px solid #333; */
+}
+
+/* #sidebar {
+    background-color: rgb(236, 232, 238);
+    float: left;
+    height: 300px;
+    width: 160px;
+    margin-right: 10px;
+    border-right: 1px solid #333;
+} */
+
+#content {
+    background-color: rgb(236, 232, 238);
+    /* float: left; Vad gör denna? */
+    width: 960px;
+}
+
+#footer {
+    background-color: rgb(126, 103, 138);
+    height: 100px;
+    /* margin-top: 10px; */
+    color: white;
+    
+}
+
+#img1Samira {
+    float: left;
+}
+
+#sidebar {
+    width: max-content;
+    display: inline-block
+}
+
+#main-wrapper {
+    width: calc(100% - 260px);
+}
+
+.float-left {
+    float: left;
+}
+
+.inline {
+    display: inline-block;
+}
+
+
+/**
+* Navigation
+*/
+
+#main-nav ul,
+#sidebar-nav ul {
+    list-style-type: none; /* tar bort punkten i listan för alla menyval i huvudmenyn*/
+    padding: 0;
+    margin: 0;
+    margin-top: 33px;
+    
+}
+
+#main-nav ul li a,
+#sidebar-nav ul li a {
+    display: block; /*Vad gör denna?*/  
+    padding: 8px 16px; /* expanderar den klickbara yttan på a elementet*/ 
+    text-decoration: none; /* Tar bort linjen under menyvalen i huvudmenyn*/
+    color:rgb(62, 52, 68);
+}
+
+#main-nav ul li a:hover {
+    background-color: rgb(143, 139, 145); /*färgen på rutan som markerar vilket av menyvalen som är aktiva när musen hålls över*/ 
+    color: white; /*Färgen på texten som visas då musen hålls över menyvalet*/
+}
+
+#main-nav > ul > li {
+    float: left; /* Gör om till en horisontell meny längst upp, skulle kunna göra om till inline element*/
+    
+}
+
+#footer > div {
+    float: right; /* flyttar footer texten till höger sida*/
+}
+
+#footer > p {
+    margin-top: 33px; /*Vad gör denna och vad ska jag göra för att texten ska centreras på höjden?*/
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none; /*gör att undermenyn inte syns hela tiden*/
+    position: absolute; /*stör inte andra element då den flyter upp, knuffar inte iväg andra element*/
+    top: 0px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block /* Gör block så att undermenyn till My Poodles visas*/
+}
+
+.active {
+    background-color: rgb(88, 82, 92);
+    color: white !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.section {
+    box-sizing: border-box;
+    width: 33%;
+    float: left;
+    padding: 20px;
+}
+
+.section-mid {
+    width: 34%;
+    float: left;
+}
